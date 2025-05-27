@@ -78,3 +78,11 @@ console.log(true && false);
 console.log(5 > 2 && 2 < 10);
 
 console.log(5 > 2 && "Matheus" === 1);
+
+// Empty values
+
+console.log(typeof null, typeof undefined);
+
+console.log(null === undefined);
+
+console.log(null == undefined);
