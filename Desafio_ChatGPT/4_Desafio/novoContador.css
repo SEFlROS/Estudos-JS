@@ -1,0 +1,20 @@
+*{
+    background-color: #fafafaab;
+    padding: 0;
+    margin: 0;
+}
+
+main-container{
+    display: flex;
+    padding: 20px;
+    margin: 25px;
+}
+
+.main-div{
+    border: 2px black solid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
