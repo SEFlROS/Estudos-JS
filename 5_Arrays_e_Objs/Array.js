@@ -80,4 +80,119 @@ Object.assign(obj2, obj);
 
 console.log(obj2);
 
-console.log(obj)
+console.log(obj);
+
+// Conhecendo melhor os objetos
+
+console.log(Object.keys(obj));
+console.log(Object.keys(obj2));
+console.log(Object.keys(car));
+
+console.log(Object.entries(car));
+
+// Mutação
+
+const a = {
+  name: "João",
+};
+
+const b = a;
+
+console.log(a);
+console.log(b);
+
+console.log(a === b);
+
+a.age = 31;
+
+console.log(a);
+console.log(b);
+
+delete b.age;
+
+console.log(a);
+console.log(b);
+
+// Loop em array
+
+const users = ["Matheus", "João", "Pedro", "Miguel"];
+
+for (let i = 0; i < users.length; i++) {
+  console.log(`Listando o usuário: ${users[i]}`);
+}
+
+// Push e pop
+
+const array = ["a", "b", "c"];
+
+array.push("d");
+
+console.log(array);
+
+console.log(array.length);
+
+array.pop();
+
+console.log(array);
+
+const itemRemovido = array.pop();
+
+console.log(itemRemovido);
+
+console.log(array);
+
+array.push("z", "x", "y");
+
+console.log(array);
+
+// shift e unshift
+
+const letters = ["a", "b", "c"];
+
+const letter = letters.shift();
+
+console.log(letter);
+
+console.log(letters);
+
+letters.unshift("p", "q", "r");
+
+letters.unshift("z");
+
+console.log(letters);
+
+// indexof e lastindexof
+
+const myElements = ["Morango", "Pêra", "Uva", "Abacate", "Uva"];
+
+console.log(myElements.indexOf("Morango"));
+console.log(myElements.indexOf("Abacate"));
+
+console.log(myElements[2]);
+console.log(myElements[myElements.indexOf("Pêra")]);
+
+console.log(myElements.lastIndexOf("Uva"));
+
+console.log(myElements.indexOf("Mamão"));
+console.log(myElements.lastIndexOf("Mamão"));
+
+// Slice
+
+const testSlice = ["a", "b", "c", "d", "e"];
+
+const subArray = testSlice.slice(2, 4);
+
+console.log(subArray);
+console.log(testSlice);
+
+const subArray2 = testSlice.slice(2, 4 + 1);
+
+console.log(subArray2);
+
+const subArray3 = testSlice.slice(10, 20);
+
+console.log(subArray3);
+
+const subArray4 = testSlice.slice(2);
+
+console.log(subArray4);
