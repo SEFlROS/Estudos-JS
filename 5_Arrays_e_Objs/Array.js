@@ -196,3 +196,78 @@ console.log(subArray3);
 const subArray4 = testSlice.slice(2);
 
 console.log(subArray4);
+
+// forEach
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+  console.log(`O número é ${numero}`);
+});
+
+const posts = [
+  { title: "Primeiro post", category: "PHP" },
+  { title: "Segundo post", category: "JavaScript" },
+  { title: "Terceiro post", category: "Python" },
+];
+
+posts.forEach((post) => {
+  console.log(`Exibindo post: ${post.title}, da categoria: ${post.category}`);
+});
+
+// Includes
+
+const brands = ["BMW", "Gol", "Fiat"];
+
+console.log(brands.includes("Fiat"));
+
+if (brands.includes("BMW")) {
+  console.log("Há carros da marca BMW");
+}
+
+// Reverse
+
+const reverseTest = [1, 2, 3, 4, 5];
+reverseTest.reverse();
+
+console.log(reverseTest);
+
+// Trim
+
+const trimTest = "   testando \n  ";
+
+console.log(trimTest.trim());
+
+console.log(trimTest);
+
+console.log(trimTest.length);
+
+console.log(trimTest.trim().length);
+
+// Padstart
+
+const testPadstart = "1";
+
+const newPadstart = testPadstart.padStart(5, "0");
+
+console.log(newPadstart);
+
+const newPadend = testPadstart.padEnd(5, "0");
+
+console.log(newPadend);
+
+// split
+
+const frase = "O rato roeu a roupa do rei de roma";
+
+const arraydaSplit = frase.split(" ");
+
+console.log(arraydaSplit);
+
+// Join
+
+const frasedeNovo = arraydaSplit.join(" ");
+
+console.log(frasedeNovo);
+const itensparaComprar = ["Mouse", "Teclado", "Monitor"];
+const frasedaCompras = `Precisamos comprar: ${itensparaComprar.join(", ")}.`;
+console.log(frasedaCompras);
